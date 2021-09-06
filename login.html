@@ -14,6 +14,8 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   
+
+  
 </head>
 
 
@@ -25,11 +27,26 @@
 
   <div class="formulario">
     <h2>Inicio de sesión</h2>
-    <form action="#">
-      <input type="text" placeholder="Usuario" required> 
-      <input type="password" placeholder="Contraseña"  required> 
+
+
+    <form class= "login-container">
+      <p> <input type="text" id= "usuario" placeholder="usuario"required></p>
+      <p> <input type="email" id= "email" placeholder="email"required></p>
+      <button type="button" onclick="verificar();"> Enviar</button>
+
+    </form>
+    
+   
+      <!-- <form action="#">
+      <input type="text" placeholder="usuario" required> 
+      <input type="password" placeholder="contraseña"  required> 
       
-      <button onclick="location.href='index.html'">Ingresar</button>
+      <button type= "button" onclick="verificar();">Enviar</button>
+   <button onclick="location.href='index.html'">Ingresar</button>
+
+
+      <INPUT onclick=go() type=button value=Acceder>
+        <FORM name=form action="TU_PAGINA_WEB.HTML">
 
     </form>
     <div class="reset-password">
@@ -38,10 +55,18 @@
       </a>
   </div>
 
+  <!--<FORM name=form action=>
+
+    <P>Usuario:    <INPUT type=text name=login> 
+    <P>Contraseña: <INPUT type=password name=password> 
+      <INPUT onclick=go() type=button value=Acceder> 
+     
+    </FORM> -->
+
 
   
 
-    <div class="formulario">
+    <!--<div class="formulario">
       <h2>Crear cuenta en e-mercado</h2>
       <form action="#">
         <input type="text" placeholder="Usuario" required>
@@ -66,9 +91,12 @@
       </form>
     </div>
    
-</div>
-  <script src="js/init.js"></script>
-  
+</div>-->
+ 
+ <script src="js/login.js"></script>
+ <script src="js/init.js"></script>
+
+
 
   
  </body>

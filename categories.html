@@ -22,16 +22,22 @@
         <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
         <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
         <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+        <a class="py-2 d-none d-md-inline-block" id="usuario" href=""></a>
+        <button type="button"class="btn btn-secondary" onclick="desconectar();"> Salir</button>
       </div>
     </nav>
+    
     <main role="main" class="pb-5">
         <div class="text-center p-4">
             <h2>Categorías</h2>
+            
             <p class="lead">Verás aquí todas las categorías del sitio.</p>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col text-right">
+                
+              
+              <div class="col text-right">
                     <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
                         <label class="btn btn-light active" id="sortAsc" >
                             <input type="radio" name="options" autocomplete="off" checked>A-Z
@@ -39,7 +45,7 @@
                         <label class="btn btn-light" id="sortDesc" >
                             <input type="radio" name="options" autocomplete="off">Z-A
                         </label>
-                        <label class="btn btn-light" id="sortByCount" >
+                        <label class="btn btn-light avtive focus" id="sortByCount" >
                             <input type="radio" name="options" autocomplete="off"><i class="fas fa-sort-amount-down mr-1"></i>Cant.
                         </label>
                     </div>
@@ -68,7 +74,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="list-group" id="cat-list-container">
+                <div class="list-group" id="cat-list-container"></div> <!--contiene todo-->
                 </div>
             </div>
         </div>
@@ -87,5 +93,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/categories.js"></script>
+    <script src="js/out.js"></script>
   </body>
 </html>
